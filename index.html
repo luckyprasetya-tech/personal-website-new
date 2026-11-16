@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lucky Achmad Prasetya-Personal Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== NAVIGASI ===== -->
+  <header class="navbar">
+    <a href="#beranda" class="logo" id="logo-teks">Welcome Friend</a>
+    <button class="menu-btn" id="menu-btn" aria-label="Menu">&#9776;</button>
+    <nav id="menu">
+      <a href="#beranda">Home</a>
+      <a href="#tentang">About</a>
+      <a href="#galeri">Gallery</a>
+      <a href="#kontak">Contact</a>
+    </nav>
+  </header>
+  <section id="beranda" class="section hero" data-layout="foto-kanan">
+    <div class="hero-teks">
+      <p class="sapaan">Hello my name is</p>
+      <h1 id="nama">Lucky Achmad Prasetya</h1>
+      <p class="tagline" id="tagline">Student • Human • Lifelong Learner</p>
+      <a href="#kontak" class="tombol">Contact Me</a>
+      <div class="sosmed" id="sosmed"></div>
+    </div>
+    <div class="hero-foto">
+      <img src="images/foto-profil.jpg" alt="Foto profil" class="foto-bulat">
+    </div>
+  </section>
+
+  <!-- ===== TENTANG =====
+       Ubah data-align: "kiri" | "tengah" | "kanan" -->
+  <section id="tentang" class="section" data-align="tengah">
+    <h2>About Me</h2>
+    <p>Hai my name is Lucky Achmad Prasetya,Im a student at Yogyakarta State University,electrical engineering major.
+      i like to learn about programming and electronics,and im also have a deep interest
+      in the field of artificial intelligence and machine learning, i also like to learn about robotic
+      and embedeed system,also i like to learn about computer vision.
+    </p>
+    <p>on grades 17 im school at SMA Negeri 1 Sleman,Then i get to Yogyakarta State University</p>
+    <div class="kartu-grid">
+      <div class="kartu"><h3>Born</h3><p>Sleman, 29 March 2007</p></div>
+      <div class="kartu"><h3>College</h3><p>Yogyakarta State University</p></div>
+      <div class="kartu"><h3>Interest</h3><p>Try some new things, Music, Traveling</p></div>
+    </div>
+  </section>
+
+  <!-- ===== GALERI ===== -->
+  <section id="galeri" class="section" data-align="tengah">
+    <h2>Galeri</h2>
+    <div class="galeri">
+      <img src="images/foto1.jpeg" alt="Foto 1">
+      <img src="images/foto2.jpeg" alt="Foto 2">
+      <img src="images/foto3.jpeg" alt="Foto 3">
+      <img src="images/foto4.jpeg" alt="Foto 4">
+      <img src="images/foto5.jpeg" alt="Foto 5">
+      <img src="images/foto6.jpeg" alt="Foto 6">
+    </div>
+  </section>
+
+  <!-- ===== KONTAK ===== -->
+  <section id="kontak" class="section" data-align="tengah">
+    <h2>Send Message</h2>
+    <p>Want to get in touch? Fill out the form below and I'll get back to you as soon as possible.</p>
+    <form id="form-masukan" class="form">
+      <input type="text" name="nama" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="pesan" rows="5" placeholder="Write your message..." required></textarea>
+      <!-- jebakan spam: jangan dihapus -->
+      <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off">
+      <button type="submit" class="tombol">Send</button>
+      <p id="status-form" class="status"></p>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="tahun"></span> <span id="footer-nama">Nama Anda</span>. Semua hak dilindungi.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
